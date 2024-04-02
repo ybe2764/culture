@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문화와 휴식의 도시</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .img-fluid, .video-responsive iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-responsive {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="my-4">문화와 휴식의 도시, 제주</h1>
-        <img src="https://api.cdn.visitjeju.net/photomng/imgpath/202209/02/84f6e9df-386f-4cbc-a5c4-d71d80b9fdff.jpg" alt="제주 문화와 휴식" class="img-fluid">
-        <p class="mt-3">
+    <div class="container py-5">
+        <h1 class="mb-4">문화와 휴식의 도시, 제주</h1>
+        <img src="https://api.cdn.visitjeju.net/photomng/imgpath/202209/02/84f6e9df-386f-4cbc-a5c4-d71d80b9fdff.jpg" alt="제주 문화와 휴식" class="img-fluid mb-4">
+        <p class="mb-4">
             제주는 자연 경관뿐만 아니라 풍부한 문화적 자산과 다양한 휴식 공간으로도 잘 알려져 있습니다. 이곳에서는 전통과 현대가
             어우러진 문화를 체험하고, 자연 속에서의 평화로운 휴식을 즐길 수 있습니다. 이 페이지에서는 제주가 문화와 휴식의 도시로서
             가지고 있는 매력과 특색에 대해 더 자세히 알아보겠습니다.
         </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KkYeVcXtgxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-responsive">
+            <iframe src="https://www.youtube.com/embed/KkYeVcXtgxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 </body>
 </html>
